@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="1.041" errors="2" skipped="0" tests="2" name="br.unibh.servicospessoas.MainTest">
+<testsuite failures="0" time="1.016" errors="2" skipped="0" tests="2" name="br.unibh.servicospessoas.MainTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_79\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="F:\IS\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8452729307165463966.tmp"/>
+    <property name="classworlds.conf" value="F:\IS\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5801965996504766968.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_79\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_60/bin/client;C:/Program Files/Java/jre1.8.0_60/bin;C:/Program Files/Java/jre1.8.0_60/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Internet Explorer;C:\Program Files\QuickTime\QTSystem;C:\Program Files\Windows Live\Shared;C:\Users\user\AppData\Local\Smartbar\Application\;C:\Users\user\AppData\Local\Smartbar\Application\;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\Java\jdk1.8.0\bin;C:\Program Files\Skype\Phone\;C:\Program Files\GtkSharp\2.12\bin;F:\PROGRAMAS\IS\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="0.886" classname="br.unibh.servicospessoas.MainTest" name="testApplicationWadl">
+  <testcase time="0.865" classname="br.unibh.servicospessoas.MainTest" name="testApplicationWadl">
     <error message="Address already in use: bind" type="java.net.BindException">java.net.BindException: Address already in use: bind
 	at sun.nio.ch.Net.bind0(Native Method)
 	at sun.nio.ch.Net.bind(Net.java:444)
@@ -101,21 +101,21 @@
 </error>
     <system-out>Starting grizzly2...
 </system-out>
-    <system-err>Out 05, 2015 5:40:09 PM com.sun.jersey.api.core.PackagesResourceConfig init
+    <system-err>Out 05, 2015 6:08:49 PM com.sun.jersey.api.core.PackagesResourceConfig init
 INFORMAÇÕES: Scanning for root resource and provider classes in the packages:
   br.unibh.servicospessoas
-Out 05, 2015 5:40:09 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+Out 05, 2015 6:08:49 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
 INFORMAÇÕES: Root resource classes found:
   class br.unibh.servicospessoas.MyResource
-  class br.unibh.servicospessoas.servicos.ServicoPessoaFisicaRestJson
   class br.unibh.servicospessoas.servicos.ServicoPessoaJuridicaRestJson
-Out 05, 2015 5:40:09 PM com.sun.jersey.api.core.ScanningResourceConfig init
+  class br.unibh.servicospessoas.servicos.ServicoPessoaFisicaRestJson
+Out 05, 2015 6:08:49 PM com.sun.jersey.api.core.ScanningResourceConfig init
 INFORMAÇÕES: No provider classes found.
-Out 05, 2015 5:40:09 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+Out 05, 2015 6:08:49 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
 INFORMAÇÕES: Initiating Jersey application, version &apos;Jersey: 1.19 02/11/2015 03:25 AM&apos;
 </system-err>
   </testcase>
-  <testcase time="0.155" classname="br.unibh.servicospessoas.MainTest" name="testMyResource">
+  <testcase time="0.151" classname="br.unibh.servicospessoas.MainTest" name="testMyResource">
     <error message="Address already in use: bind" type="java.net.BindException">java.net.BindException: Address already in use: bind
 	at sun.nio.ch.Net.bind0(Native Method)
 	at sun.nio.ch.Net.bind(Net.java:444)
@@ -155,17 +155,17 @@ INFORMAÇÕES: Initiating Jersey application, version &apos;Jersey: 1.19 02/11/2
 </error>
     <system-out>Starting grizzly2...
 </system-out>
-    <system-err>Out 05, 2015 5:40:10 PM com.sun.jersey.api.core.PackagesResourceConfig init
+    <system-err>Out 05, 2015 6:08:50 PM com.sun.jersey.api.core.PackagesResourceConfig init
 INFORMAÇÕES: Scanning for root resource and provider classes in the packages:
   br.unibh.servicospessoas
-Out 05, 2015 5:40:10 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+Out 05, 2015 6:08:50 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
 INFORMAÇÕES: Root resource classes found:
   class br.unibh.servicospessoas.MyResource
-  class br.unibh.servicospessoas.servicos.ServicoPessoaFisicaRestJson
   class br.unibh.servicospessoas.servicos.ServicoPessoaJuridicaRestJson
-Out 05, 2015 5:40:10 PM com.sun.jersey.api.core.ScanningResourceConfig init
+  class br.unibh.servicospessoas.servicos.ServicoPessoaFisicaRestJson
+Out 05, 2015 6:08:50 PM com.sun.jersey.api.core.ScanningResourceConfig init
 INFORMAÇÕES: No provider classes found.
-Out 05, 2015 5:40:10 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+Out 05, 2015 6:08:50 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
 INFORMAÇÕES: Initiating Jersey application, version &apos;Jersey: 1.19 02/11/2015 03:25 AM&apos;
 </system-err>
   </testcase>
