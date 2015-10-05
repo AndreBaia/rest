@@ -2,11 +2,19 @@ package br.unibh.servicospessoas.entidades;
 
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement
 public class PessoaJuridica extends Pessoa {
 	private String cnpj;
 	private String email;
 	private Date dataConstituicao;
-	private String site;	
+	private String site;
+	
+	public PessoaJuridica(){
+		
+	}
 	
 	//
 	public PessoaJuridica(Long id, String nome, String endereco, String telefone, String cnpj, String email, Date dataConstituicao,
