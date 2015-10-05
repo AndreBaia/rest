@@ -55,6 +55,27 @@ public class PessoaFisicaDAO implements DAO<PessoaFisica, Long> {
 
 		return null;
 	}
+	
+	public PessoaFisica findCpf(String cpf) {
+		try {
+			PreparedStatement p = JDBCUtil.getConnection()
+					.prepareStatement("select * from tb_pessoa_fisica where cpf = ?");
+			p.setString(1, cpf);
+			ResultSet res = p.executeQuery();
+			if (res.next()) {
+				return new PessoaFisica(res.getLong("id"), res.getString("nome"), res.getString("endereco"),
+						res.getString("telefone"), res.getString("cpf"), res.getString("email"),
+						res.getDate("data_nascimento"), res.getString("sexo"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		} finally {
+
+		}
+
+		return null;
+	}
 
 	// Inserir no banco
 	@Override

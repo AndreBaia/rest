@@ -10,7 +10,7 @@ import br.unibh.servicospessoas.entidades.PessoaJuridica;
 
 public class PessoaJuridicaDAO implements DAO<PessoaJuridica, Long> {
 	
-	private SimpleDateFormat df = new SimpleDateFormat();
+	private SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 
 	@Override
 	public PessoaJuridica find(Long id) {
@@ -56,6 +56,28 @@ public class PessoaJuridicaDAO implements DAO<PessoaJuridica, Long> {
 		return null;
 	}
 
+	public PessoaJuridica findCnpj(String cnpj) {
+		try {
+			PreparedStatement p = JDBCUtil.getConnection()
+					.prepareStatement("select * from tb_pessoa_juridica where cnpj = ?");
+			p.setString(1, cnpj);
+			ResultSet res = p.executeQuery();
+			if (res.next()) {
+				return new PessoaJuridica(res.getLong("id"), res.getString("nome"), res.getString("endereco"),
+						res.getString("telefone"), res.getString("cnpj"), res.getString("email"),
+						res.getDate("data_constituicao"), res.getString("site"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		} finally {
+
+		}
+
+		return null;
+	}
+
+	
 	// Inserir no banco
 	@Override
 	public void insert(PessoaJuridica t) {

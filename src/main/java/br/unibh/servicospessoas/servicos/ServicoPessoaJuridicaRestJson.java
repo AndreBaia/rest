@@ -47,14 +47,13 @@ public class ServicoPessoaJuridicaRestJson {
 	public PessoaJuridica salvar(PessoaJuridica p) {
 		PessoaJuridicaDAO dao = new PessoaJuridicaDAO();
 		dao.insert(p);
-		dao.update(p);
-		return dao.find(p.getCnpj());
+		return dao.findCnpj(p.getCnpj());	
 	}
 
 	// Atualizar
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON)
-	@Path("{id}")
+	@Path("/{id}")
 	public PessoaJuridica atualizar(@PathParam("id") int id, PessoaJuridica p) {
 		PessoaJuridicaDAO dao = new PessoaJuridicaDAO();
 		dao.update(p);

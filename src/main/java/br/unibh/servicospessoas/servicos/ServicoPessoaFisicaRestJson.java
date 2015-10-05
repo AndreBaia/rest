@@ -49,7 +49,7 @@ public class ServicoPessoaFisicaRestJson {
 		PessoaFisicaDAO dao = new PessoaFisicaDAO();
 		dao.insert(p);
 		dao.update(p);
-		return dao.find(p.getCpf());
+		return dao.findCpf(p.getCpf());
 	}
 
 	// Atualizar
